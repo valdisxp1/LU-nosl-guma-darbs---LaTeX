@@ -71,11 +71,20 @@
 
 %satura rādītājs
 \usepackage{tocloft}
+%neizmantot bold fontu
 \renewcommand\cftsecfont{\normalfont}
 \renewcommand\cftsecpagefont{\normalfont}
+%līnja ar punktiem pa vidu
 \renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}
+\renewcommand{\cftsubsecleader}{\cftdotfill{\cftsecdotsep}}
+%nodaļas atdala ar punktiem
 \renewcommand\cftsecdotsep{\cftdot}
 \renewcommand\cftsubsecdotsep{\cftdot}
+\renewcommand\cftsubsubsecdotsep{\cftdot}
+%punkti aiz nodaļu numuriem
+\renewcommand\cftsecaftersnum{.} 
+\renewcommand\cftsubsecaftersnum{.} 
+\renewcommand\cftsubsubsecaftersnum{.} 
 
 %Katrai nodaļai jābūt jaunā lapā.
 \let\stdsection\section
