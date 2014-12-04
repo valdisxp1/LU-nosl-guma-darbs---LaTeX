@@ -114,24 +114,25 @@
 				\relax
 			\else
 				%paraugā 3 newlines are 12pt fontu(single line spacing)
-				\vspace{36px}
+				\vspace{36pt}
 				{\large\MakeUppercase \@thesistype} \\
 			\fi
 		\end{center}
 		~\vfill
 
-		% pie kreisās malas
-		% ir kaste ar info par autoru un vadītāju
-		\hspace*{0.4\linewidth}
+		% Pie kreisās malas
+		% ir kaste ar info par autoru un vadītāju.
+		\begin{minipage}{0.9\linewidth}
 
+			\begin{flushleft}		
 			\ifx @author \@empty
 				\relax
 			\else
-				Autors: \textbf{\@author}\\
+				Autors: \textbf{\@author}\\[-0.25\baselineskip] % teksta rindiņas cieši kopā
 				\ifx \@studentid \@empty
 					\relax
 				\else
-					Studenta apliecības Nr.: \@studentid \\
+					Studenta apliecības Nr.: \@studentid \\[-0.25\baselineskip]
 				\fi
 			\fi
 			\ifx \@supervisor \@empty
@@ -141,6 +142,8 @@
 				\vspace{0.5in}
 			\fi
 			
+			\end{flushleft}
+		\end{minipage}
 
 			~\vfill	
 
