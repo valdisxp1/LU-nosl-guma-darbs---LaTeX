@@ -28,7 +28,9 @@
 % margins
 \usepackage[top=20mm,bottom=20mm,left=30mm,right=20mm]{geometry}
 
+% Rindiņstarpa
 \linespread{1.5}
+
 % fonts
 
 % XeLaTeX atbalsts tiek pieslēgts ar šādām pakotnēm:
@@ -57,19 +59,12 @@
 \setlength{\parskip}{3pt}
 
 \usepackage{sectsty}
-
+% Nodaļu virsraksti ar lieliem burtiem
 \sectionfont{\Large\MakeUppercase}
 \subsectionfont{\large}
 
 % spacing
 \usepackage{setspace}
-
-%
-\usepackage{tocloft}
-
-
-% references
-%\usepackage{varioref}
 
 % attēli
 \usepackage{graphicx}
@@ -82,13 +77,9 @@
 \renewcommand\cftsecdotsep{\cftdot}
 \renewcommand\cftsubsecdotsep{\cftdot}
 
-%katrai nodaļai jābūt jaunā lapā.
+%Katrai nodaļai jābūt jaunā lapā.
 \let\stdsection\section
 \renewcommand\section{\newpage\stdsection}
-
-
-% bibliography
-%\usepackage{natbib}
 
 % page headings and numbering
 \makeatletter
@@ -122,17 +113,17 @@
 			\ifx \@thesistype \@empty
 				\relax
 			\else
-				\vspace{0.5em}
+				%paraugā 3 newlines are 12pt fontu(single line spacing)
+				\vspace{36px}
 				{\large\MakeUppercase \@thesistype} \\
 			\fi
 		\end{center}
 		~\vfill
 
-		%~pa labi no centra
+		% pie kreisās malas
 		% ir kaste ar info par autoru un vadītāju
 		\hspace*{0.4\linewidth}
-		\begin{minipage}{0.6\linewidth}
-			\begin{flushleft}
+
 			\ifx @author \@empty
 				\relax
 			\else
@@ -140,7 +131,7 @@
 				\ifx \@studentid \@empty
 					\relax
 				\else
-					Stud. apl. \@studentid \\
+					Studenta apliecības Nr.: \@studentid \\
 				\fi
 			\fi
 			\ifx \@supervisor \@empty
@@ -150,8 +141,6 @@
 				\vspace{0.5in}
 			\fi
 			
-			\end{flushleft}
-			\end{minipage}
 
 			~\vfill	
 
