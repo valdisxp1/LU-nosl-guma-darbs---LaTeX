@@ -69,6 +69,11 @@
 % attēli
 \usepackage{graphicx}
 
+% attēlu un tabulu captions
+\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+\renewcommand{\thetable}{\arabic{section}.\arabic{figure}}
+\usepackage[font={small,bf},labelfont={small,normal,it}]{caption}
+
 %satura rādītājs
 \usepackage{tocloft}
 %neizmantot bold fontu
