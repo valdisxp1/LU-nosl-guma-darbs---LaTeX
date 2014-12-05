@@ -25,6 +25,9 @@
 	\location{}
 \makeatother
 
+%citātiem
+\usepackage{cite}
+
 % margins
 \usepackage[top=20mm,bottom=20mm,left=30mm,right=20mm]{geometry}
 
@@ -70,9 +73,16 @@
 \usepackage{graphicx}
 
 % attēlu un tabulu captions
+% ir numurēti nodaļas ietvaros
 \renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
 \renewcommand{\thetable}{\arabic{section}.\arabic{figure}}
-\usepackage[font={small,bf},labelfont={small,normal,it}]{caption}
+% indentifikators sliprakstā, caption treknrakstā(bold) 
+\usepackage[font={small,bf},labelfont={small,normal,it},justification=raggedright]{caption}
+
+% tabulas identifikators nobīdīts par labi
+\DeclareCaptionFormat{hfillstart}{\hfill#1#2#3\par}
+% atdalīts ar jaunu rindu
+\captionsetup[table]{format=hfillstart,labelsep=newline,justification=raggedleft}
 
 %satura rādītājs
 \usepackage{tocloft}
