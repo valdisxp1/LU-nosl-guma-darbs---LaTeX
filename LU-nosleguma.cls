@@ -101,6 +101,9 @@
 \renewcommand\cftsubsecaftersnum{.} 
 \renewcommand\cftsubsubsecaftersnum{.} 
 
+% Satura radītājs ar lieliem burtiem lapas vidū
+\renewcommand{\cfttoctitlefont}{\hfil\Large\bfseries\MakeUppercase}
+
 %Katrai nodaļai jābūt jaunā lapā.
 \let\stdsection\section
 \renewcommand\section{\newpage\stdsection}
