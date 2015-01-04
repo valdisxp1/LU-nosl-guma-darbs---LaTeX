@@ -63,8 +63,8 @@
 
 \usepackage{sectsty}
 % Nodaļu virsraksti ar lieliem burtiem
-\sectionfont{\Large\MakeUppercase}
-\subsectionfont{\large}
+\sectionfont{\centering\Large\MakeUppercase}
+\subsectionfont{\centering\large}
 
 % spacing
 \usepackage{setspace}
