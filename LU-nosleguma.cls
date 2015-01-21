@@ -187,7 +187,6 @@
 	\end{titlepage}
 
     % Visas tabulas un attēli ir centrēti
-    \g@addto@macro{\table}{\centering}
-    \g@addto@macro{\figure}{\centering}
+    \g@addto@macro\@floatboxreset\centering
 }
 \makeatother
