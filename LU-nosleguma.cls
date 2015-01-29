@@ -28,6 +28,9 @@
 %citātiem
 \usepackage{cite}
 
+% Kārto avotus pēc citēšanas secības
+\bibliographystyle{unsrt}
+
 % interneta linkiem un referencēm
 \usepackage{hyperref}
 
