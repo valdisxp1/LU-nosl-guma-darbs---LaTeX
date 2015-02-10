@@ -28,6 +28,8 @@
 %citātiem
 \usepackage{cite}
 
+% Pareizs nosaukums literatūras sadaļai
+\AtBeginDocument{\renewcommand\refname{Izmantotā literatūra un avoti}}
 % Kārto avotus pēc citēšanas secības
 \bibliographystyle{unsrt}
 
