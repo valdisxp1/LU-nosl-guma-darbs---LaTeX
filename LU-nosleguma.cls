@@ -85,7 +85,7 @@
 \renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
 \renewcommand{\thetable}{\arabic{section}.\arabic{figure}}
 % indentifikators sliprakstā, caption treknrakstā(bold) 
-\usepackage[font={small,bf},labelfont={small,normal,it},singlelinecheck=false,justification=centering]{caption}
+\usepackage[font={small,bf},labelfont={small,normal,it},singlelinecheck=false]{caption}
 
 % tabulas identifikators nobīdīts par labi
 \DeclareCaptionFormat{hfillstart}{\hfill#1#2#3\par}
