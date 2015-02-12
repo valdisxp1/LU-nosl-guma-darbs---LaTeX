@@ -33,9 +33,6 @@
 % Kārto avotus pēc citēšanas secības
 \bibliographystyle{unsrt}
 
-% interneta linkiem un referencēm
-\usepackage{hyperref}
-
 % margins
 \usepackage[top=20mm,bottom=20mm,left=30mm,right=20mm]{geometry}
 
