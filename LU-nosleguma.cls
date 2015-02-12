@@ -28,6 +28,11 @@
 %citātiem
 \usepackage{cite}
 
+% Pareizs nosaukums literatūras sadaļai
+\AtBeginDocument{\renewcommand\refname{Izmantotā literatūra un avoti}}
+% Kārto avotus pēc citēšanas secības
+\bibliographystyle{unsrt}
+
 % margins
 \usepackage[top=20mm,bottom=20mm,left=30mm,right=20mm]{geometry}
 
@@ -187,7 +192,6 @@
 	\end{titlepage}
 
     % Visas tabulas un attēli ir centrēti
-    \g@addto@macro{\table}{\centering}
-    \g@addto@macro{\figure}{\centering}
+    \g@addto@macro\@floatboxreset\centering
 }
 \makeatother
