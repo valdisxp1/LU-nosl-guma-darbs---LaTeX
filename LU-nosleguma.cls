@@ -80,7 +80,7 @@
 % attēlu un tabulu captions
 % ir numurēti nodaļas ietvaros
 \renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
-\renewcommand{\thetable}{\arabic{section}.\arabic{figure}}
+\renewcommand{\thetable}{\arabic{section}.\arabic{table}}
 % indentifikators sliprakstā, caption treknrakstā(bold) 
 \usepackage[font={small,bf},labelfont={small,normal,it},singlelinecheck=false]{caption}
 
