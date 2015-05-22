@@ -198,4 +198,51 @@
     % Visas tabulas un attēli ir centrēti
     \g@addto@macro\@floatboxreset\centering
 }
+
+\makeatletter
+\def \docpage {%
+\clearpage
+\pagenumbering{gobble}
+\noindent
+\@thesistype  ``{\@title}'' izstrādāts LU Datorikas fakultātē. 
+
+\*
+
+\noindent
+Ar savu parakstu apliecinu, ka pētījums veikts patstāvīgi, izmantoti tikai tajā norādītie informācijas avoti.
+\*
+
+\noindent
+Autors:\hspace{100pt}{\@author}
+
+\vspace{36pt}
+
+\noindent
+Rekomendēju/nerekomendēju darbu aizstāvēšanai (nevajadzīgo izsvītrot)
+
+\*
+
+\noindent
+Vadītājs: {\@supervisor} 
+
+\vspace{72pt}
+
+\noindent
+Darbs iesniegts Datorikas fakultātē 
+
+\*
+
+\noindent
+Dekāna pilnvarotā persona:
+
+\vspace{36pt}
+
+\noindent
+Darbs aizstāvēts kursa darbu komisijas sēdē 
+
+\vspace{48pt}
+
+\noindent
+Komisija:
+}
 \makeatother
